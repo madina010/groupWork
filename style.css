@@ -146,6 +146,42 @@ p {
     font-weight: 300!important;
 }
 
+/* section second */ 
+.gallery{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%
+}
+.left1 h2,
+.left1 p, 
+.right2 h2,
+.right2 p,
+.left3 h2,
+.left3 p{
+    color: #333;
+    font-size: 1.5em;
+    margin: 40px; 
+    padding: 40px; 
+}
+.left1, .right2, .left3{
+    height: 30em;
+}
+.right1{
+    background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/3-landing/img/bg-showcase-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.left2{
+    background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/3-landing/img/bg-showcase-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.right3{
+    background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/3-landing/img/bg-showcase-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* section third  */
 
 .testimonials {
@@ -173,6 +209,7 @@ p {
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    /* section1 and aection3 */
     .section-first .icons-item .icons i {
         height: auto;
     }
@@ -191,10 +228,43 @@ p {
     .section-first .icons-item {
         max-width: 90%;
     }
+
+    /* section2 */
+    .gallery{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 16% 16% 16% 16% 16% 16%;
+    }
+    
+    .right1{
+        order: 1;
+        height: 500px;
+    }
+    .left1{
+        order: 2;
+        height: 500px;
+    }  
+    .left2{
+        order: 3;
+        height: 500px;
+    }
+    .right2{
+        order: 4;
+        height: 500px;
+    }    
+    .right3{
+        order: 5;
+        height: 500px;
+    }
+    .left3{
+        order: 6;
+        height: 500px;
+    }
 }
 
 
 @media (min-width: 320px) and (max-width: 768px) {
+    /* scetion1 and section3 */
     .row {
         flex-direction: column;
         margin-left: 0;
@@ -212,5 +282,37 @@ p {
 
     .section-first .icons-item .icons {
         height: auto;
+    }
+
+    /* section2 */
+    .gallery{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 16% 16% 16% 16% 16% 16%;
+    }
+    
+    .right1{
+        order: 1;
+        height: 500px;
+    }
+    .left1{
+        order: 2;
+        height: 500px;
+    }  
+    .left2{
+        order: 3;
+        height: 500px;
+    }
+    .right2{
+        order: 4;
+        height: 500px;
+    }    
+    .right3{
+        order: 5;
+        height: 500px;
+    }
+    .left3{
+        order: 6;
+        height: 500px;
     }
 }
