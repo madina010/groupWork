@@ -348,6 +348,90 @@ header {
     font-size: 72px !important;
 }
 
+/* section fourth */
+.showcase11 {
+    background-image: url('https://www.kinesis.ie/gfx/layout/kinesis-screen-bg-masthead.jpg') ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    height: 330px;
+    color: #f4f4f4;
+}
+
+/* footer */
+#href ul li {
+    display: inline-flex;  
+}
+
+#href {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+#href a{
+    color: #0067d4;
+    text-decoration: none;
+}
+
+ul .nav {
+    gap: 15px;
+    width: 50%;
+    display: flex;
+}
+
+.facebook img {
+    max-width: 20px;
+}
+
+.facebook:hover{
+    cursor: pointer;
+}
+
+.dot {
+    color:#000;
+}
+
+footer .container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    font-size: 28px;
+    display: flex;
+    gap: 40px;
+}
+
+.fa-instagram:hover {
+    color: #0d3e74;
+}
+
+.fa-facebook:hover {
+    color:#0d3e74;
+}
+
+.fa-twitter:hover {
+    color: #0d3e74;
+}
+
+.text {
+    background-color: #ffffff;
+    color: rgb(143, 122, 126);
+    /* position: absolute;
+    left: 10%; */
+    width: 63%;
+    font-size: 15px;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: -3px;
+}
+
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -406,6 +490,24 @@ header {
     .left3{
         order: 6;
         height: 500px;
+    }
+
+    /* footer */   
+    ul .nav {
+        margin-left: 10%;
+    }
+
+    .submit {
+        width: 60%;
+        padding: 1em;
+    }
+
+    #href {
+        align-items: center;
+    }
+
+    .text {
+        text-align: center;
     }
 }
 
@@ -471,5 +573,39 @@ header {
     .left3{
         order: 6;
         height: 500px;
+    }
+
+    /* footer */
+
+    footer {
+        flex-direction: column;
+    }
+
+    ul .nav {
+        padding: 0;
+        width: 100% !important;
+        font-size: 14px;
+        max-width: 95%;
+        margin: 0 8em;
+        /* margin-left: 80px; */
+    }
+
+    .social-icons {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #href {
+        align-items: center;
+    }
+  
+    .text {
+        width: 75%;
+        max-width: 75%;
+        margin-left: 113px;
+        margin-right: auto;
+        margin-top: -70px;
+        margin-bottom: 0;
     }
 }
