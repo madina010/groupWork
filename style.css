@@ -301,7 +301,7 @@ header {
 .left3 h2,
 .left3 p{
     color: #333;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 40px; 
     padding: 40px; 
 }
@@ -358,7 +358,7 @@ header {
     justify-content: center;
     flex-direction: column;
     padding: 0 20px;
-    height: 330px;
+    height: 400px;
     color: #f4f4f4;
 }
 
